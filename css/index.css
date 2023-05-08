@@ -16,20 +16,25 @@ audio{
 .container{
     height: 420px;
     overflow: hidden;
+   
 }
 
 .container ul{
     list-style: none;
+    /* 设置ul过渡时间，形成动画效果 */
     transition: 0.6s;
 }
 
 .container li{
     height: 30px;
     line-height: 30px;
+    /* 设置每个 li 过渡到高亮的时间 */
     transition: 0.2s;
 }
 
+/* 控制含有属性 active的歌词 li高亮  */
 .container li.active{
     color: #fff;
+    /* 通过变形放大字体 1.2倍 */
     transform: scale(1.2);
 }
